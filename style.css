@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;800;900&display=swap');
+
+:root {
+  --pastel-orange: #FF9F68;
+  --peach: #FFD29D;
+  --yellow: #FFE600;
+  --cream: #FFFDD0;
+  --black: #121212;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--black);
+  font-family: 'Prompt', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header & Navigation */
+header {
+  background-color: var(--pastel-orange);
+  border-bottom: 4px solid var(--black);
+  padding: 15px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--black);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  background-color: var(--yellow);
+  padding: 2px 8px;
+  border: 2px solid var(--black);
+  border-radius: 4px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+  background-color: var(--yellow);
+  border-color: var(--black);
+  box-shadow: 3px 3px 0px var(--black);
+}
+
+/* Common Layout Elements */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  display: inline-block;
+  background-color: var(--peach);
+  padding: 4px 12px;
+  border: 2px solid var(--black);
+}
+
+/* Neo-brutalist Bold Cards */
+.bold-card {
+  background-color: var(--white);
+  border: 4px solid var(--black);
+  box-shadow: 8px 8px 0px var(--black);
+  border-radius: 16px;
+  padding: 30px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.bold-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px var(--black);
+}
+
+.card-tag {
+  display: inline-block;
+  background-color: var(--yellow);
+  border: 2px solid var(--black);
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Abstract Decorative Shapes */
+.abstract-shape {
+  position: absolute;
+  border: 3px solid var(--black);
+  z-index: -1;
+}
+
+.shape-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--pastel-orange);
+}
+
+.shape-square {
+  width: 80px;
+  height: 80px;
+  background-color: var(--yellow);
+  transform: rotate(15deg);
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--pastel-orange);
+  color: var(--black);
+  font-weight: 800;
+  font-size: 1.2rem;
+  padding: 14px 28px;
+  text-decoration: none;
+  border: 3px solid var(--black);
+  border-radius: 12px;
+  box-shadow: 5px 5px 0px var(--black);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--yellow);
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0px var(--black);
+}
+
+/* Footer */
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 4px solid var(--black);
+  margin-top: 60px;
+}
+
+footer p {
+  font-weight: 600;
+}
+
+/* Responsive Web Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .page-title {
+    font-size: 2.3rem;
+  }
+}
