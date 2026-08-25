@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดต่อเรา - AURA GLOW</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 3px solid var(--black);
+      border-radius: 8px;
+      font-family: 'Prompt', sans-serif;
+      font-size: 1rem;
+      background-color: var(--cream);
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      background-color: var(--white);
+      box-shadow: 4px 4px 0px var(--black);
+    }
+    @media (max-width: 768px) {
+      .contact-wrapper { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">AURA <span>GLOW</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="services.html">บริการ</a></li>
+        <li><a href="work.html">ผลงาน/รีวิว</a></li>
+        <li><a href="process.html">ขั้นตอน</a></li>
+        <li><a href="contact.html" class="active">ติดต่อเรา</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 class="page-title">BOOK AN APPOINTMENT</h1>
+    <div class="page-subtitle">จองคิวรับบริการ หรือสอบถามข้อมูลเพิ่มเติม</div>
+
+    <div class="contact-wrapper">
+      <!-- ฟอร์มจองคิว -->
+      <div class="bold-card" style="background-color: var(--peach);">
+        <h2 style="font-size: 2rem; margin-bottom: 20px;">แบบฟอร์มลงทะเบียนจองคิว</h2>
+        <form action="#" method="POST" onsubmit="alert('ส่งข้อมูลการจองคิวเรียบร้อยแล้ว!'); return false;">
+          <div class="form-group">
+            <label for="name">ชื่อ-นามสกุล:</label>
+            <input type="text" id="name" required placeholder="คุณสมชาย ใจดี">
+          </div>
+          <div class="form-group">
+            <label for="phone">เบอร์โทรศัพท์:</label>
+            <input type="tel" id="phone" required placeholder="08X-XXX-XXXX">
+          </div>
+          <div class="form-group">
+            <label for="service">บริการที่สนใจ:</label>
+            <select id="service">
+              <option>ปรับรูปหน้า (Botulinum Toxin)</option>
+              <option>เติมเต็มฟิลเลอร์ (Hyaluronic Filler)</option>
+              <option>งานผิวใส (Glass Skin / Rejuran)</option>
+              <option>ยกกระชับ (Ultra-HIFU)</option>
+              <option>สลายไขมัน (Meso Fat)</option>
+              <option>รักษาสิวครบวงจร</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">วันที่สะดวกเข้าใช้บริการ:</label>
+            <input type="date" id="date" required>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%;">ยืนยันการจองคิว ✨</button>
+        </form>
+      </div>
+
+      <!-- ข้อมูลการติดต่อ -->
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div class="bold-card" style="background-color: var(--yellow);">
+          <h3>📍 ที่ตั้งคลินิก</h3>
+          <p>123/45 ถนนสุขุมวิท แขวงคลองเตย เขตคลองเตย กรุงเทพมหานคร 10110 (ใกล้ BTS สถานีพร้อมพงษ์ มีที่จอดรถ)</p>
+        </div>
+
+        <div class="bold-card" style="background-color: var(--pastel-orange);">
+          <h3>⏰ เวลาทำการ</h3>
+          <p>เปิดบริการทุกวัน: 11:00 น. - 20:00 น. (รับคิวสุดท้าย 19:00 น.)</p>
+        </div>
+
+        <div class="bold-card" style="background-color: #FFF;">
+          <h3>💬 ช่องทางติดต่อด่วน</h3>
+          <p><strong>LINE Official:</strong> @auraglow.clinic</p>
+          <p><strong>Instagram:</strong> @auraglow_beauty</p>
+          <p><strong>Tel:</strong> 02-123-4567 / 089-999-9999</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 AURA GLOW Beauty & Aesthetic Clinic. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
