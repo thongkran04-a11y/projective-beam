@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA GLOW - คลินิกเสริมความงามยุคใหม่</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      padding: 60px 0;
+    }
+    .hero-title {
+      font-size: 4.2rem;
+      font-weight: 900;
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+    .hero-title span {
+      background-color: var(--yellow);
+      padding: 0 10px;
+      border: 3px solid var(--black);
+      box-shadow: 4px 4px 0px var(--black);
+    }
+    .hero-img-box {
+      background-color: var(--peach);
+      border: 4px solid var(--black);
+      box-shadow: 10px 10px 0px var(--black);
+      border-radius: 20px;
+      height: 380px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 2rem;
+      position: relative;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">AURA <span>GLOW</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">หน้าแรก</a></li>
+        <li><a href="services.html">บริการ</a></li>
+        <li><a href="work.html">ผลงาน/รีวิว</a></li>
+        <li><a href="process.html">ขั้นตอน</a></li>
+        <li><a href="contact.html">ติดต่อเรา</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <div>
+        <h1 class="hero-title">เผยความสวย ในแบบ <span>YOUR OWN WAY!</span></h1>
+        <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 30px;">
+          ยกระดับออร่าและผิวพรรณด้วยนวัตกรรมความงามระดับพรีเมียม ดูแลโดยแพทย์ผู้เชี่ยวชาญ ปลอดภัย ปรับโครงหน้าและดูแลผิวให้ตรงจุด
+        </p>
+        <a href="contact.html" class="btn-primary">จองคิวรับบริการเลย! ✨</a>
+      </div>
+      <div class="hero-img-box">
+        [ ภาพนางแบบออร่าพรีเมียม Collage ]
+        <div class="abstract-shape shape-square" style="top: -20px; right: -20px;"></div>
+        <div class="abstract-shape shape-circle" style="bottom: -20px; left: -20px;"></div>
+      </div>
+    </section>
+
+    <h2 style="font-size: 2.5rem; font-weight: 900; margin-top: 60px;">ทำไมต้อง AURA GLOW?</h2>
+    <div class="features-grid">
+      <div class="bold-card" style="background-color: var(--peach);">
+        <span class="card-tag">EXPERT DOCTORS</span>
+        <h3>แพทย์ผู้เชี่ยวชาญเฉพาะทาง</h3>
+        <p>ประเมินโครงหน้าและปัญหาผิวแบบเคสต่อเคส ออกแบบการรักษาที่แม่นยำ</p>
+      </div>
+      <div class="bold-card" style="background-color: var(--yellow);">
+        <span class="card-tag">100% AUTHENTIC</span>
+        <h3>ตัวยาและเครื่องแท้ตรวจสอบได้</h3>
+        <p>ยาทุกตัว นวัตกรรมเครื่องมือทุกชิ้น แกะกล่องให้ดูต่อหน้า ชัวร์ ปลอดภัยแน่นอน</p>
+      </div>
+      <div class="bold-card" style="background-color: var(--pastel-orange);">
+        <span class="card-tag">NO HARD SALES</span>
+        <h3>บริการจริงใจ ไม่กดดันยัดย้าย</h3>
+        <p>เน้นผลลัพธ์และความสุขของลูกค้า ให้คำปรึกษาตรงไปตรงมา ปราศจากการบังคับคอร์ส</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 AURA GLOW Beauty & Aesthetic Clinic. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
